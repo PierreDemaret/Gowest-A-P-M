@@ -1,1 +1,1 @@
-# Gowest-A-P-M
+# GoWest
