@@ -21,7 +21,7 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark nav">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#home">
                         <h1>Go West</h1>
@@ -50,20 +50,23 @@
                 </div>
             </nav>
 
-            <main id="home" class="col-12">
-                <img class="img-fluid" src="assets/img/accueil.jpg" alt="accueil">
+            <header id="home" class="col-12 pt-3">
+                <img class="img-fluid mobile" src="./public/assets/img/banner.jpg" alt="accueil">
+                <div class="intro">
+                    <div class="opacity">
+                        <h2>Qui sommes-nous ?</h2>
+                        <p>
+                            Crée par la famille Cygiel en 1984, Go West, au départ revendeur officiel Santiag, est
+                            aujourd'hui
+                            le point de rendez-vous de tous les passionnés de Doc Martens.
+                            Aujourd'hui tenu par Cédric, le fils des fondateurs,
+                            Go West vous propose un large choix de références.
+                        <p>
+                    </div>
+                </div>
+            </header>
 
-                <h2>Qui sommes-nous ?</h2>
-                <p>
-                    Crée par la famille Cygiel en 1984, Go West, au départ revendeur officiel Santiag, est
-                    aujourd'hui
-                    le point de rendez-vous de tous les passionnés de Doc Martens.
-                    Aujourd'hui tenu par Cédric, le fils des fondateurs,
-                    Go West vous propose un large choix de références.
-                <p>
-            </main>
-
-            <section id="product" class="col-12">
+            <main id="product" class="col-12 pt-3">
                 <h2>Nos produits</h2>
                 <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators indicators">
@@ -139,13 +142,12 @@
                 <input type="radio" class="slide-input" name="slides" id="slide-dot-6">
                 <img src="assets/img/vonda.png" alt="vonda" class="slide-img"> -->
 
-            </section>
+            </main>
 
-            <section id="galerie" class="col-12">
-                <h2>Photos clients</h2>
+            <section id="galerie" class="col-12 pt-3">
+                <h2>Photos Clients</h2>
                 <figure>
-                    <img class="img-fluid"
-                        src="assets/img/Screenshot_2023-06-01-14-54-14-878_com.facebook.katana-edit.jpg" alt="">
+                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_1.jpg" alt="">
                     <figcaption>
                         Accueil chaleureux, les proprios parlent en conséquence de cause on peut leur faire
                         confiance à
@@ -153,56 +155,67 @@
                     </figcaption>
                 </figure>
                 <figure>
-                    <img class="img-fluid"
-                        src="assets/img/Screenshot_2023-06-01-14-55-04-574_com.facebook.katana-edit.jpg" alt="">
+                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_2.jpg" alt="">
                     <figcaption>Magasin chaleureux, vendeur sympathique et amusant.</figcaption>
                 </figure>
                 <figure>
-                    <img class="img-fluid" src="assets/img/FB_IMG_1685624268886.jpg" alt="">
+                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_3.jpg" alt="">
                     <figcaption> Achat fait, envois réalisé très rapidement,aucun regret, merci,
                         je suis ravie de mon achat.</figcaption>
                 </figure>
                 <figure>
-                    <img class="img-fluid" src="assets/img/photo1.jpg" alt="">
+                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_4.jpg" alt="">
                     <figcaption>Un petit coucou de Chamonix, Merci pour votre accueil, et vos conseils.</figcaption>
                 </figure>
-                <figure>
-                    <img src="" alt="">
+                <figure class="mobile">
+                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_5.jpg" alt="">
                     <figcaption></figcaption>
                 </figure>
-                <figure>
+                <figure class="mobile">
                     <img src="" alt="">
                     <figcaption></figcaption>
                 </figure>
             </section>
 
-            <section id="contact" class="col-12">
+            <section id="contact" class="col-12 pt-3">
                 <h2>Contact</h2>
                 <div>
-                    <h3>Coordonnées de la Boutique</h3>
-                    <p>1/3 rue du Marché de Lanselles, Amiens, France</p>
-                    <iframe
+                    <address>
+                        <a
+                            href="https://www.google.com/maps/place/1+Rue+du+March%C3%A9+Lanselles,+80000+Amiens/@49.8955216,2.2974709,17z/data=!4m6!3m5!1s0x47e7843f2ff6d03f:0x892fb0d26fbad44d!8m2!3d49.8955216!4d2.2974709!16s%2Fg%2F11c5hj3377?entry=ttu">Adresse
+                            : 1/3 rue du Marché de Lanselles, Amiens, France
+                        </a>
+                    </address>
+
+                    <p><a href="tel:+33660987654">Tel : 06-60-98-76-54</a></p>
+                    <p>Horaires : Du Lundi au Samedi 10h30 - 12h30 14h00 - 19h00</p>
+                    <iframe class="mobile"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.165404085924!2d2.2948497753366115!3d49.89569792715343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7843f30f50e1f%3A0x4b8aed26a1fec9af!2sGowest!5e0!3m2!1sfr!2sfr!4v1685690401604!5m2!1sfr!2sfr"
                         allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-                <form class="form">
-                    <fieldset> <!--formulaire-->
-                        <legend>Formulaire de Contact</legend>
-                        <label for="email">Email : </label>
-                        <input type="email" id="email" placeholder="name@example.com">
-                        <label for="text">Message : </label>
-                        <textarea name="text" id="text" cols="40" rows="10" placeholder="Message..."></textarea>
-                        <button type="submit">Envoyer</button>
+                <form class="container-fluid">
+                    <fieldset class="row justify-content-end p-3">
+                        <legend class="col-12">Formulaire de Contact</legend>
+                        <label class="col-4" for="email">Email : </label>
+                        <input class="col-8" type="email" id="email" placeholder="name@example.com">
+                        <label class="col-4" for="text">Message : </label>
+                        <textarea class="col-8" name="text" id="text" cols="40" rows="10"
+                            placeholder="Message..."></textarea>
+                        <button class="col-3 btn btn-warning" type="submit">Envoyer</button>
                     </fieldset>
                 </form>
-                <p class="horraires">Horraires : Du Lundi au Samedi 10h30 - 12h30 14h00 - 19h00</p>
+
             </section>
 
-            <footer class="col-12">
-                <a href="mentionslégales/MentionsLegales.html" target="_blank">Mentions
-                    légales</a>
-                <a href="#product">Produits</a>
-                <a href="#contact">Contact</a>
+            <footer class="col-12 pt-3 pb-3 bg-dark">
+                <div class="container-fluid">
+                    <div class="row text-center text-light">
+                        <a class="col-4" href="mentionslégales/MentionsLegales.html" target="_blank">Mentions
+                            légales</a>
+                        <a class="col-4" href="#product">Produits</a>
+                        <a class="col-4" href="#contact">Contact</a>
+                    </div>
+                </div>
             </footer>
         </div>
 </body>
