@@ -1,223 +1,319 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="./public/assets/css/style.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"
-        defer>
-        </script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./public/assets/css/style.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+      defer
+    ></script>
 
     <title>Go West</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <nav class="col-12 navbar navbar-expand-lg navbar-dark bg-dark nav">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#home">
-                        <h1>Go West</h1>
-                    </a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#home">Présentation</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#product">Produits</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#galerie">Photo Clients</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
-                            </li>
-                        </ul>
-                    </div>
+      <div class="row">
+        <nav class="col-12 navbar navbar-light bg-warning navbar-expand-lg">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#home">
+              <h1 class="desktop">Go West</h1>
+            </a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul
+                class="navbar-nav me-auto mb-2 mb-lg-0 flex-md-row justify-content-md-evenly col-lg-12"
+              >
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#home"
+                    >Présentation</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#product">Produits</a>
+                </li>
+                <li class="mobile tablette imglogo">
+                  <img
+                    src="/public/assets/img/GO-WEST-AMIENS.png"
+                    alt="logo"
+                    class="img-fluid"
+                  />
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#galerie">Photo Clients</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#contact">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <header id="home" class="col-12 pt-3">
+          <img
+            class="img-fluid mobile"
+            src="./public/assets/img/banner.jpg"
+            alt="accueil"
+          />
+          <div class="intro">
+            <div class="opacity">
+              <h2>Qui sommes-nous ?</h2>
+              <p>
+                Crée par la famille Cygiel en 1984, Go West, au départ revendeur
+                officiel Santiag, est aujourd'hui le point de rendez-vous de
+                tous les passionnés de Doc Martens. Aujourd'hui tenu par Cédric,
+                le fils des fondateurs, Go West vous propose un large choix de
+                références.
+              </p>
+
+              <p></p>
+            </div>
+          </div>
+        </header>
+
+        <main id="product" class="col-12 pt-3">
+          <h2>Nos produits</h2>
+          <div
+            id="carouselExampleCaptions"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-indicators indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleCaptions"
+                data-bs-slide-to="3"
+                aria-label="Slide 4"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="./public/assets/img/product/1461.png"
+                  class="img-fluid d-block"
+                  alt="photo chaussure modèle 1461"
+                />
+                <div class="carousel-caption d-md-block">
+                  <p>1461</p>
                 </div>
-            </nav>
-
-            <header id="home" class="col-12 pt-3">
-                <img class="img-fluid mobile" src="./public/assets/img/banner.jpg" alt="accueil">
-                <div class="intro">
-                    <div class="opacity">
-                        <h2>Qui sommes-nous ?</h2>
-                        <p>
-                            Crée par la famille Cygiel en 1984, Go West, au départ revendeur officiel Santiag, est
-                            aujourd'hui
-                            le point de rendez-vous de tous les passionnés de Doc Martens.
-                            Aujourd'hui tenu par Cédric, le fils des fondateurs,
-                            Go West vous propose un large choix de références.
-                        <p>
-                    </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./public/assets/img/product/vonda.png"
+                  class="img-fluid d-block"
+                  alt="photo chaussure modèle Vonda"
+                />
+                <div class="carousel-caption d-md-block">
+                  <p>Vonda</p>
                 </div>
-            </header>
-
-            <main id="product" class="col-12 pt-3">
-                <h2>Nos produits</h2>
-                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators indicators">
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
-                            class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                            aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                            aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
-                            aria-label="Slide 4"></button>
-                    </div>
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="./public/assets/img/product/1461.png" class="img-fluid d-block"
-                                alt="photo chaussure modèle 1461">
-                            <div class="carousel-caption d-md-block">
-                                <p>1461</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./public/assets/img/product/vonda.png" class="img-fluid d-block"
-                                alt="photo chaussure modèle Vonda">
-                            <div class="carousel-caption d-md-block">
-                                <p>Vonda</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./public/assets/img/product/chelsea.png" class="img-fluid d-block"
-                                alt="photo chaussure modèle Chelsea">
-                            <div class="carousel-caption d-md-block">
-                                <p>Chelsea</p>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <img src="./public/assets/img/product/jadon.png" class="img-fluid d-block"
-                                alt="photo chaussure modèle Jadon">
-                            <div class="carousel-caption d-md-block">
-                                <p>Chelsea</p>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="prev">
-                        <i class="bi bi-chevron-left chevron" aria-hidden="true"></i>
-                        <span class="visually-hidden">Précédent</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                        data-bs-slide="next">
-                        <i class="bi bi-chevron-right chevron"></i>
-                        <span class="visually-hidden">Suivant</span>
-                    </button>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./public/assets/img/product/chelsea.png"
+                  class="img-fluid d-block"
+                  alt="photo chaussure modèle Chelsea"
+                />
+                <div class="carousel-caption d-md-block">
+                  <p>Chelsea</p>
                 </div>
-                <!-- <div class="menu">
-                    <label for="slide-dot-1"></label>
-                    <label for="slide-dot-2"></label>
-                    <label for="slide-dot-3"></label>
-                    <label for="slide-dot-4"></label>
-                    <label for="slide-dot-5"></label>
-                    <label for="slide-dot-6"></label>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="./public/assets/img/product/jadon.png"
+                  class="img-fluid d-block"
+                  alt="photo chaussure modèle Jadon"
+                />
+                <div class="carousel-caption d-md-block">
+                  <p>Chelsea</p>
                 </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="prev"
+            >
+              <i class="bi bi-chevron-left chevron" aria-hidden="true"></i>
+              <span class="visually-hidden">Précédent</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide="next"
+            >
+              <i class="bi bi-chevron-right chevron"></i>
+              <span class="visually-hidden">Suivant</span>
+            </button>
+          </div>
+        </main>
+        <section id="galerie" class="col-12 pt-3">
+          <h2>Photos Clients</h2>
+          <figure>
+            <img
+              class="img-fluid"
+              src="./public/assets/img/galerie/galerie_1.jpg"
+              alt=""
+            />
+            <figcaption>
+              Accueil chaleureux, les proprios parlent en conséquence de cause
+              on peut leur faire confiance à 100%.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              class="img-fluid"
+              src="./public/assets/img/galerie/galerie_2.jpg"
+              alt=""
+            />
+            <figcaption>
+              Magasin chaleureux, vendeur sympathique et amusant.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              class="img-fluid"
+              src="./public/assets/img/galerie/galerie_3.jpg"
+              alt=""
+            />
+            <figcaption>
+              Achat fait, envois réalisé très rapidement,aucun regret, merci, je
+              suis ravie de mon achat.
+            </figcaption>
+          </figure>
+          <figure>
+            <img
+              class="img-fluid"
+              src="./public/assets/img/galerie/galerie_4.jpg"
+              alt=""
+            />
+            <figcaption>
+              Un petit coucou de Chamonix, Merci pour votre accueil, et vos
+              conseils.
+            </figcaption>
+          </figure>
+          <figure class="mobile">
+            <img
+              class="img-fluid"
+              src="./public/assets/img/galerie/galerie_5.jpg"
+              alt=""
+            />
+            <figcaption></figcaption>
+          </figure>
+          <figure class="mobile">
+            <img src="" alt="" />
+            <figcaption></figcaption>
+          </figure>
+        </section>
 
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-1" checked>
-                <img src="assets/img/1461.png" alt="1461" class="slide-img">
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-2">
-                <img src="assets/img/blaire.png" alt="blaire" class="slide-img">
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-3">
-                <img src="assets/img/chelsea.png" alt="chelsea" class="slide-img">
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-4">
-                <img src="assets/img/jadon.png" alt="jadon" class="slide-img">
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-5">
-                <img src="assets/img/SINCLAIR.png" alt="sinclair" class="slide-img">
-                <input type="radio" class="slide-input" name="slides" id="slide-dot-6">
-                <img src="assets/img/vonda.png" alt="vonda" class="slide-img"> -->
+        <section id="contact" class="col-12 pt-3">
+          <h2>Contact</h2>
+          <div>
+            <address>
+              <a
+                href="https://www.google.com/maps/place/1+Rue+du+March%C3%A9+Lanselles,+80000+Amiens/@49.8955216,2.2974709,17z/data=!4m6!3m5!1s0x47e7843f2ff6d03f:0x892fb0d26fbad44d!8m2!3d49.8955216!4d2.2974709!16s%2Fg%2F11c5hj3377?entry=ttu"
+                >Adresse : 1/3 rue du Marché de Lanselles, Amiens, France
+              </a>
+            </address>
 
-            </main>
+            <p><a href="tel:+33660987654">Tel : 06-60-98-76-54</a></p>
+            <p>Horaires : Du Lundi au Samedi 10h30 - 12h30 14h00 - 19h00</p>
+            <iframe
+              class="mobile"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.165404085924!2d2.2948497753366115!3d49.89569792715343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7843f30f50e1f%3A0x4b8aed26a1fec9af!2sGowest!5e0!3m2!1sfr!2sfr!4v1685690401604!5m2!1sfr!2sfr"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <form class="container-fluid">
+            <fieldset class="row justify-content-end p-3">
+              <legend class="col-12">Formulaire de Contact</legend>
+              <label class="col-4" for="email">Email : </label>
+              <input
+                class="col-8"
+                type="email"
+                id="email"
+                placeholder="name@example.com"
+              />
+              <label class="col-4" for="text">Message : </label>
+              <textarea
+                class="col-8"
+                name="text"
+                id="text"
+                cols="40"
+                rows="10"
+                placeholder="Message..."
+              ></textarea>
+              <button class="col-3 btn btn-warning" type="submit">
+                Envoyer
+              </button>
+            </fieldset>
+          </form>
+        </section>
 
-            <section id="galerie" class="col-12 pt-3">
-                <h2>Photos Clients</h2>
-                <figure>
-                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_1.jpg" alt="">
-                    <figcaption>
-                        Accueil chaleureux, les proprios parlent en conséquence de cause on peut leur faire
-                        confiance à
-                        100%.
-                    </figcaption>
-                </figure>
-                <figure>
-                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_2.jpg" alt="">
-                    <figcaption>Magasin chaleureux, vendeur sympathique et amusant.</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_3.jpg" alt="">
-                    <figcaption> Achat fait, envois réalisé très rapidement,aucun regret, merci,
-                        je suis ravie de mon achat.</figcaption>
-                </figure>
-                <figure>
-                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_4.jpg" alt="">
-                    <figcaption>Un petit coucou de Chamonix, Merci pour votre accueil, et vos conseils.</figcaption>
-                </figure>
-                <figure class="mobile">
-                    <img class="img-fluid" src="./public/assets/img/galerie/galerie_5.jpg" alt="">
-                    <figcaption></figcaption>
-                </figure>
-                <figure class="mobile">
-                    <img src="" alt="">
-                    <figcaption></figcaption>
-                </figure>
-            </section>
-
-            <section id="contact" class="col-12 pt-3">
-                <h2>Contact</h2>
-                <div>
-                    <address>
-                        <a
-                            href="https://www.google.com/maps/place/1+Rue+du+March%C3%A9+Lanselles,+80000+Amiens/@49.8955216,2.2974709,17z/data=!4m6!3m5!1s0x47e7843f2ff6d03f:0x892fb0d26fbad44d!8m2!3d49.8955216!4d2.2974709!16s%2Fg%2F11c5hj3377?entry=ttu">Adresse
-                            : 1/3 rue du Marché de Lanselles, Amiens, France
-                        </a>
-                    </address>
-
-                    <p><a href="tel:+33660987654">Tel : 06-60-98-76-54</a></p>
-                    <p>Horaires : Du Lundi au Samedi 10h30 - 12h30 14h00 - 19h00</p>
-                    <iframe class="mobile"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2570.165404085924!2d2.2948497753366115!3d49.89569792715343!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7843f30f50e1f%3A0x4b8aed26a1fec9af!2sGowest!5e0!3m2!1sfr!2sfr!4v1685690401604!5m2!1sfr!2sfr"
-                        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <form class="container-fluid">
-                    <fieldset class="row justify-content-end p-3">
-                        <legend class="col-12">Formulaire de Contact</legend>
-                        <label class="col-4" for="email">Email : </label>
-                        <input class="col-8" type="email" id="email" placeholder="name@example.com">
-                        <label class="col-4" for="text">Message : </label>
-                        <textarea class="col-8" name="text" id="text" cols="40" rows="10"
-                            placeholder="Message..."></textarea>
-                        <button class="col-3 btn btn-warning" type="submit">Envoyer</button>
-                    </fieldset>
-                </form>
-
-            </section>
-
-            <footer class="col-12 pt-3 pb-3 bg-dark">
-                <div class="container-fluid">
-                    <div class="row text-center text-light">
-                        <a class="col-4" href="mentionslégales/MentionsLegales.html" target="_blank">Mentions
-                            légales</a>
-                        <a class="col-4" href="#product">Produits</a>
-                        <a class="col-4" href="#contact">Contact</a>
-                    </div>
-                </div>
-            </footer>
-        </div>
-</body>
-
+        <footer class="col-12 pt-3 pb-3 bg-dark">
+          <div class="container-fluid">
+            <div class="row text-center text-light">
+              <a
+                class="col-4"
+                href="mentionslégales/MentionsLegales.html"
+                target="_blank"
+                >Mentions légales</a
+              >
+              <a class="col-4" href="#product">Produits</a>
+              <a class="col-4" href="#contact">Contact</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
 </html>
