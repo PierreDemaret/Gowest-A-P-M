@@ -50,6 +50,10 @@ h1.modal-title {
     cursor: pointer;
     color:#FFA500
 }
+
+h2{
+    text-align: center;
+}
 @media screen and (max-width: 768px){
     h2 {
         padding: 3%;
@@ -113,6 +117,8 @@ h1.modal-title {
     #contact>div{
         padding: 3%;
     }
+
+
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .tablette{
@@ -137,6 +143,8 @@ h1.modal-title {
         background-color: rgba(0,0,0,0.5);
         height: 400px;
     }
+
+
 }
 
 @media screen and (min-width: 992px) {
