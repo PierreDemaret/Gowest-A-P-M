@@ -39,6 +39,17 @@ footer a{
     color: white;
     text-decoration:none; 
 }
+h1.modal-title {
+    text-decoration: underline;
+}
+.modal-body a {
+    color:black;
+    text-decoration: underline;
+}
+.modal-body a:hover {
+    cursor: pointer;
+    color:#FFA500
+}
 @media screen and (max-width: 768px){
     h2 {
         padding: 3%;
