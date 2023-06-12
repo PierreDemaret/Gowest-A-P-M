@@ -104,8 +104,23 @@ footer a{
     }
 }
 @media screen and (min-width: 769px) {
-
+    .tablette{
+        display: none;
+    }
 }
-@media screen and (min-width: 992px) {
 
+@media screen and (min-width: 992px) {
+    nav{height: 60px;}
+    .desktop{
+        display: none;
+        }
+   .imglogo{
+    display: block;
+   }
+   .imglogo img{
+    height: 60px;
+   }
+   nav li{
+    align-self: center;
+   }
 }
