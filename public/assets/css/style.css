@@ -133,7 +133,25 @@ h2{
         height: 400px;
     }
 
+    #galerie img{
+        object-fit: cover;
+        height: 320px;
+        width: 100%;
+       }
 
+       #galerie figcaption{
+        text-align: center;
+        background-color: white;
+        padding: 4%;
+    }
+    #galerie figcaption::before {
+        color: #FFA500;
+        content: "\201C";
+    }
+    #galerie figcaption::after{
+        color: #FFA500;
+        content: "\201D";
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -166,4 +184,23 @@ h2{
     padding: 2%;
    }
 
+   #galerie img{
+    object-fit: cover;
+    height: 300px;
+    width: 100%;
+   }
+
+   #galerie figcaption{
+    text-align: center;
+    background-color: white;
+    padding: 4%;
+}
+#galerie figcaption::before {
+    color: #FFA500;
+    content: "\201C";
+}
+#galerie figcaption::after{
+    color: #FFA500;
+    content: "\201D";
+}
 }
