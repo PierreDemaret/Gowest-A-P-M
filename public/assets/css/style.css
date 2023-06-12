@@ -39,6 +39,10 @@ footer a{
     color: white;
     text-decoration:none; 
 }
+
+h2{
+    text-align: center;
+}
 @media screen and (max-width: 768px){
     h2 {
         padding: 3%;
@@ -102,6 +106,8 @@ footer a{
     #contact>div{
         padding: 3%;
     }
+
+
 }
 @media screen and (min-width: 769px) and (max-width: 991px) {
     .tablette{
@@ -126,6 +132,8 @@ footer a{
         background-color: rgba(0,0,0,0.5);
         height: 400px;
     }
+
+
 }
 
 @media screen and (min-width: 992px) {
