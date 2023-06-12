@@ -103,9 +103,28 @@ footer a{
         padding: 3%;
     }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 769px) and (max-width: 991px) {
     .tablette{
         display: none;
+    }
+    h2 {
+        padding-block: 5% 0%;
+    }
+
+    .opacity p{
+        padding: 5% 10%;
+        font-size: x-large;
+    }
+    .intro {
+        text-align: center;
+        height: 400px;
+        background-image:url("../img/banner.jpg");
+        background-size: cover;
+        color: white;
+    }
+    .opacity {
+        background-color: rgba(0,0,0,0.5);
+        height: 400px;
     }
 }
 
@@ -123,4 +142,20 @@ footer a{
    nav li{
     align-self: center;
    }
+
+   header{
+    display: flex;
+    column-gap: 3%;
+    align-items: center;
+    font-size: x-large;
+   }
+
+   header>img,header>div{
+    flex: 1;
+   }
+   header p,header h2{
+    text-align: center;
+    padding: 2%;
+   }
+
 }
