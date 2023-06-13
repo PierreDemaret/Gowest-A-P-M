@@ -1,0 +1,289 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: oswald;
+    src: url("../fonts/Oswald-VariableFont_wght.ttf");
+}
+
+@font-face {
+    font-family: rye;
+    src: url("../fonts/Rye-Regular.ttf");
+}
+
+:root {
+    --orange-light: #FFA500;
+    --orange-dark: #F18800;
+}
+
+body {
+    font-family: oswald;
+}
+
+h1 {
+    font-family: rye;
+}
+
+header h2 {
+    color: var(--orange-light);
+}
+
+.chevron {
+    color: #FFA500;
+    font-size: 3.6rem;
+}
+
+.carousel-item>div {
+    color: black;
+    position: initial;
+}
+.carousel-caption p {
+    font-size: x-large;
+}
+.carousel-item>div>p {
+    border: 2px solid var(--orange-dark);
+}
+
+.indicators {
+    background-color: #FFA500;
+    bottom: auto;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+h1.modal-title {
+    text-decoration: underline;
+}
+
+.modal-body a {
+    color: black;
+    text-decoration: underline;
+}
+
+.modal-body a:hover {
+    cursor: pointer;
+    color: #FFA500
+}
+input,
+textarea {
+    margin-bottom: 3%;
+    border: 2px solid var(--orange-light);
+}
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+h2 {
+    text-align: center;
+}
+#contact a {
+    color: #F18800;
+}
+form {
+    border: 2px solid var(--orange-light);
+    border-radius: 3%;
+}
+
+@media screen and (max-width: 768px) {
+    h2 {
+        padding: 3%;
+    }
+
+    .intro {
+        text-align: center;
+        height: 250px;
+        background-image: url("../img/banner.jpg");
+        background-size: cover;
+        color: white;
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 250px;
+    }
+
+    .nav {
+        background-color: var(--orange-light);
+    }
+
+    #galerie {
+        background-color: var(--orange-dark);
+    }
+
+    #galerie h2 {
+        color: white;
+    }
+
+    #galerie img {
+        width: 100%;
+        height: 135px;
+        object-fit: cover;
+        border-top-left-radius: 24px;
+        border-top-right-radius: 24px;
+    }
+
+    #galerie figcaption {
+        text-align: center;
+        background-color: white;
+        padding: 4%;
+        height: 100px;
+    }
+
+    #galerie figcaption::before {
+        color: #FFA500;
+        content: "\201C";
+    }
+
+    #galerie figcaption::after {
+        color: #FFA500;
+        content: "\201D";
+    }
+
+
+
+
+
+
+
+    .mobile {
+        display: none;
+    }
+
+    #contact>div {
+        padding: 3%;
+    }
+
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 991px) {
+    .tablette {
+        display: none;
+    }
+    nav li {
+        font-size: x-large;
+    }
+
+
+    h2 {
+        padding-block: 5% 0%;
+    }
+
+    .opacity p {
+        padding: 5% 10%;
+        font-size: x-large;
+    }
+
+    .intro {
+        text-align: center;
+        height: 400px;
+        background-image: url("../img/banner.jpg");
+        background-size: cover;
+        color: white;
+    }
+
+    .opacity {
+        background-color: rgba(0, 0, 0, 0.5);
+        height: 400px;
+    }
+
+    #galerie img {
+        object-fit: cover;
+        height: 320px;
+        width: 100%;
+    }
+
+    #galerie figcaption {
+        text-align: center;
+        background-color: white;
+        padding: 4%;
+        font-size:xx-large;
+    }
+
+    #galerie figcaption::before {
+        color: #FFA500;
+        content: "\201C";
+    }
+
+    #galerie figcaption::after {
+        color: #FFA500;
+        content: "\201D";
+    }
+    iframe {
+        height: 300px;
+    }
+    #contact {
+        border: 2px solid #FFA500;
+        border-radius: 3%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    nav {
+        height: 60px;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .imglogo {
+        display: block;
+    }
+
+    .imglogo img {
+        height: 60px;
+    }
+
+    nav li {
+        align-self: center;
+        font-size:x-large;
+    }
+
+    header {
+        display: flex;
+        column-gap: 3%;
+        align-items: center;
+        font-size: x-large;
+    }
+
+    header>img,
+    header>div {
+        flex: 1;
+    }
+
+    header p,
+    header h2 {
+        text-align: center;
+        padding: 2%;
+    }
+
+    #galerie img {
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+    }
+
+    #galerie figcaption {
+        text-align: center;
+        background-color: white;
+        padding: 4%;
+    }
+
+    #galerie figcaption::before {
+        color: #FFA500;
+        content: "\201C";
+    }
+
+    #galerie figcaption::after {
+        color: #FFA500;
+        content: "\201D";
+    }
+    iframe {
+        height: 200px;
+        border: 2px solid #FFA500;
+    }
+}
